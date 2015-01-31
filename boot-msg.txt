@@ -1,0 +1,241 @@
+Reset Defaults....
+save crc = 4521
+Receive SIGTERM signal, System will be rebooted......
+Restarting system.
+
+
+U-Boot 1.1.7 (Dec 13 2011 - 13:49:42)
+                                     
+Board: Ralink APSoC DRAM:  32 MB
+relocate_code Pointer at: 81fb4000
+******************************    
+Software System Reset Occurred
+******************************
+spi_wait_nsec: 42             
+spi device id: 7f 9d 46 7f 9d (9d467f9d)
+Warning: un-recognized chip ID, please update bootloader!
+raspi_read: from:30000 len:1000                          
+.*** Warning - bad CRC, using default environment
+                                                 
+============================================ 
+Ralink UBoot Version: 3.6.0.0                
+-------------------------------------------- 
+ASIC 5350_MP (Port5<->None)                  
+DRAM_CONF_FROM: Boot-Strapping 
+DRAM_TYPE: SDRAM               
+DRAM_SIZE: 256 Mbits
+DRAM_WIDTH: 16 bits 
+DRAM_TOTAL_WIDTH: 16 bits
+TOTAL_MEMORY_SIZE: 32 MBytes
+Flash component: SPI Flash  
+Date:Dec 13 2011  Time:13:49:42
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:128, ways:4, linesz:32 ,total:16384 
+                                                 
+ ##### The CPU freq = 360 MHZ #### 
+ estimate memory size =32 Mbytes   
+raspi_read: from:40028 len:6    
+.                            
+raspi_read: from:0 len:30004 
+....*************Is_update = 0 plat = 1**************
+                                                     
+Please choose the operation: 
+   1: Load system code to SDRAM via TFTP. 
+   2: Load system code then write to Flash via TFTP. 
+   3: Boot system code via Flash (default).          
+   4: Entr boot command line interface.    
+   7: Load Boot Loader code then write to Flash via Serial. 
+   9: Load Boot Loader code then write to Flash via TFTP.                                                                                                                                                                                  0 
+                                                                                                                                                                                                                                            
+3: System Boot system code via Flash.
+## Booting image at bc050000 ...     
+raspi_read: from:50000 len:40   
+.   Image Name:   Linux Kernel Image
+   Created:      2013-08-23   7:31:57 UTC
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    3794821 Bytes =  3.6 MB                  
+   Load Address: 80000000               
+   Entry Point:  80307000
+raspi_read: from:50040 len:39e785 
+..........................................................   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK                                                  
+No initrd                           
+## Transferring control to Linux (at address 80307000) ...
+## Giving linux memsize in MB, 32                         
+                                 
+Starting kernel ...
+                   
+
+LINUX started...
+
+ THIS IS ASIC
+Linux version 2.6.21 (root@hex.centos.mac) (gcc version 3.4.2) #3378 Fri Aug 23 15:31:27 HKT 2013
+
+ The CPU feqenuce set to 360 MHz
+CPU revision is: 0001964c
+Determined physical RAM map:
+ memory: 02000000 @ 00000000 (usable)
+Initrd not found or empty - disabling initrd
+Built 1 zonelists.  Total pages: 8128
+Kernel command line: console=ttyS1,57600n8 root=/dev/ram0
+Primary instruction cache 32kB, physically tagged, 4-way, linesize 32 bytes.
+Primary data cache 16kB, 4-way, linesize 32 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+Cache parity protection disabled
+cause = 40808000, status = 11000000
+PID hash table entries: 128 (order: 7, 512 bytes)
+calculating r4koff... 0015f900(1440000)
+CPU frequency 360.00 MHz
+Using 180.000 MHz high precision timer.
+Console: colour dummy device 80x25
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Memory: 26472k/32768k available (2368k kernel code, 6296k reserved, 727k data, 2732k init, 0k highmem)
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+NET: Registered protocol family 2
+Time: MIPS clocksource has been installed.
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+detected lzma initramfs
+detected lzma initramfs
+initramfs: LZMA lc=3,lp=0,pb=2,dictSize=1048576,origSize=10946560
+LZMA initramfs by Ming-Ching Tiew <mctiew@yahoo.com>........................................................................................................................................................................deice id : 7f 9d 46 7f 9d (9d467f9d)
+Warning: un-recognized chip ID, please update SPI driver!
+AT25DF321(1f 47000000) (4096 Kbytes)
+mtd .name = raspi, .size = 0x00400000 (4M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+Creating 6 MTD partitions on "raspi":
+0x00000000-0x00030000 : "Bootloader"
+0x00030000-0x00040000 : "Config"
+0x00040000-0x00050000 : "Factory"
+0x00050000-0x00400000 : "Kernel"
+0x00050000-0x00400000 : "Romfs"
+0x00050000-0x00400000 : "Firmware"
+RT3xxx EHCI/OHCI init.
+squashfs: version 3.2-r2 (2007/01/15) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+NTFS driver 2.1.28 [Flags: R/W].
+fuse init (API version 7.8)
+io scheduler noop registered (default)
+----- GPIO Init ----
+DIR=003eff84
+MOD=0000005d
+DATA=003c7f85
+Ralink gpio driver initialized
+Serial: 8250/16550 driver $Revision: 1.7 $ 2 ports, IRQ sharing disabled
+serial8250: ttyS0 at I/O 0xb0000500 (irq = 37) is a 16550A
+serial8250: ttyS1 at I/O 0xb0000c00 (irq = 12) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 12288K size 1024 blocksize
+loop: loaded (max 8 devices)
+rdm_major = 254
+MAC_ADRH -- : 0x00000000
+MAC_ADRL -- : 0x00000000
+Ralink APSoC Ethernet Driver Initilization. v2.0  256 rx/tx descriptors allocated, mtu = 1500!
+MAC_ADRH -- : 0x00008c88
+MAC_ADRL -- : 0x2b000008
+PROC INIT OK!
+PPP generic driver version 2.4.2
+PPP Deflate Compression module registered
+PPP BSD Compression module registered
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+PPPoL2TP kernel driver, V0.17
+PPTP driver version 0.8.1
+block2mtd: version $Revision: 1.1.1.1 $
+Netfilter messages via NETLINK v0.30.
+ip_conntrack version 2.4 (256 buckets, 2048 max) - 232 bytes per conntrack
+ip_conntrack_pptp version 3.1 loaded
+ip_nat_pptp version 3.0 loaded
+ip_tables: (C) 2000-2006 Netfilter Core Team, Type=Restricted Cone
+ipt_time loading
+arp_tables: (C) 2002 David S. Miller
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+Freeing unused kernel memory: 2732k freed
+nvram_init start.
+NVRAM MTD is mtd1
+_nvram_read checksum = 4521 save checksum = 4521
+nvram_init finished. 
+Netlink Hotplugdrt3xxx-ehci rt3xxx-ehci: Ralink EHCI Host Controller
+rt3xxx-ehci rt3xxx-ehci: new USB bus registered, assigned bus number 1
+rt3xxx-ehci rt3xxx-ehci: irq 18, io mem 0x101c0000
+rt3xxx-ehci rt3xxx-ehci: USB 0.0 started, EHCI 1.00, driver 10 Dec 2004
+usb usb1: Product: Ralink EHCI Host Controller
+usb usb1: Manufacturer: Linux 2.6.21 ehci_hcd
+usb usb1: SerialNumber: rt3xxx
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+rt3xxx-ohci rt3xxx-ohci: RT3xxx OHCI Controller
+rt3xxx-ohci rt3xxx-ohci: new USB bus registered, assigned bus number 2
+rt3xxx-ohci rt3xxx-ohci: irq 18, io mem 0x101c1000
+usb usb2: Product: RT3xxx OHCI Controller
+usb usb2: Manufacturer: Linux 2.6.21 ohci_hcd
+usb usb2: SerialNumber: rt3xxx-ohci
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+
+phy_tx_ring = 0x015cb000, tx_ring = 0xa15cb000
+
+phy_rx_ring0 = 0x015cc000, rx_ring0 = 0xa15cc000
+RT305x_ESW: Link Status Changed
+Hit enter to continue...
+--->Wan_Hwaddr: 2C:67:FB:AB:29:53
+--->lan_Hwaddr: 2C:67:FB:AB:29:54
+Restoring defaults... SSID1   ----> MIFI-2952
+save crc = ae50
+done
+
+3G Router Start!
+rt2860v2_ap: module license 'unspecified' taints kernel.
+
+
+=== pAd = c0041000, size = 630176 ===
+
+<-- RTMPAllocAdapterBlock, Status=0
+RX DESC a16f8000  size = 2048
+<-- RTMPAllocTxRxRingMemory, Status=0
+Key1Str is Invalid key length(0) or Type(0)
+Key2Str is Invalid key length(0) or Type(0)
+Key3Str is Invalid key length(0) or Type(0)
+Key4Str is Invalid key length(0) or Type(0)
+3b:43:dc:d3:42:ab:35:9d:cd:73:1d:76:4e:64:5d:3b:
+3a:3a:75:28:d4:a9:79:28:6c:8f:e2:d5:74:9d:f7:d7:
+
+1. Phy Mode = 9
+2. Phy Mode = 9
+3. Phy Mode = 9
+MCS Set = ff 00 00 00 01
+Main bssid = 2c:67:fb:ab:29:52
+<==== rt28xx_init, Status=0
+0x1300 = 00064380
+Algorithmics/MIPS FPU Emulator v1.5
+device ra0 entered promiscuous mode
+device eth2 entered promiscuous mode
+br0: port 2(eth2) entering learning state
+br0: port 1(ra0) entering learning state
+=====> set eth2.2 hwaddr to 2C:67:FB:AB:29:53 error
+ioctl siocsifmtu fail 19 No such device
+Hit enter to continue...
+br0: topology change detected, propagating
+br0: port 2(eth2) entering forwarding state
+br0: topology change detected, propagating
+br0: port 1(ra0) entering forwarding state
+-----------------run smartd----------------------
+Hit enter to continue...
+
