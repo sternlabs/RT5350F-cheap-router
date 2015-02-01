@@ -45,6 +45,9 @@ Log into the router and use the `sysupgrade` utility.
 
 Don't worry, system config files are saved by default.
 
+## Images
+
+<img src="https://farm6.staticflickr.com/5483/12224520464_90c79d648b_m.jpg" width="240" height="80" alt="MPR-A5 Mini AP Wireless Router">
 
 ## References
 
