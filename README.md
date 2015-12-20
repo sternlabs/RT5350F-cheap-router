@@ -4,9 +4,9 @@
 
 Download the snapshot Image Generator.
 
-    wget https://downloads.openwrt.org/snapshots/trunk/ramips/generic/OpenWrt-ImageBuilder-ramips_rt305x-for-linux-x86_64.tar.bz2
-    tar xjf OpenWrt-ImageBuilder-ramips_rt305x-for-linux-x86_64
-    cd OpenWrt-ImageBuilder-ramips_rt305x-for-linux-x86_64
+    wget https://downloads.openwrt.org/snapshots/trunk/ramips/generic/OpenWrt-ImageBuilder-ramips-rt305x.Linux-x86_64.tar.bz2
+    tar xjf OpenWrt-ImageBuilder-ramips-rt305x.Linux-x86_64.tar.bz2
+    cd OpenWrt-ImageBuilder-ramips-rt305x.Linux-x86_64
 
 Build the image. You can add optional packages using the `PACKAGES=` variable.
 
